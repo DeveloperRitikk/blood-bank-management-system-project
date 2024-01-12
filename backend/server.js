@@ -19,6 +19,7 @@ app.use(cors());
 app.use(morgan("dev"));
 const _dirname=path.dirname("")
 const buildpath = path.json(_dirname,"../frontend/build")
+app.use(express.static(buildpath));
 
 //routes
 // 1 test route
